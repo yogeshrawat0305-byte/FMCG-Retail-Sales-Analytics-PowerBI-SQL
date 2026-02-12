@@ -36,51 +36,60 @@ Ensured data consistency before analysis
 # Key Business KPIs Calculated
 
 1️⃣ Total Sales
-Calculated using:
-SUM(unit_price * transaction_qty)
-2️⃣ Total Orders
-COUNT(transaction_id)
-3️⃣ Total Quantity Sold
-SUM(transaction_qty)
-4️⃣ Month-over-Month (MoM) Growth
-Used LAG() window function
-Calculated:
-MoM Difference
-MoM Growth %
-Demonstrated analytical comparison between April and May
+  Calculated using:
+  SUM(unit_price * transaction_qty)
 
+2️⃣ Total Orders
+  COUNT(transaction_id)
+
+3️⃣ Total Quantity Sold
+  SUM(transaction_qty)
+
+4️⃣ Month-over-Month (MoM) Growth
+  Used LAG() window function
+  Calculated:
+  MoM Difference
+  MoM Growth %
+  Demonstrated analytical comparison between April and May
+  
 # Advanced SQL Analysis Performed
 
 🔹 Sales by Store Location
-Identified top-performing stores
-Ranked locations by revenue
+  Identified top-performing stores
+  Ranked locations by revenue
+
 🔹 Sales by Product Category
-Revenue breakdown by:
-Coffee
-Tea
-Bakery
-Chocolate
-Packaged products
+  Revenue breakdown by:
+  Coffee
+  Tea
+  Bakery
+  Chocolate
+  Packaged products
+
 🔹 Top 10 Products
-Ranked products by total revenue
-Used ORDER BY + LIMIT
+  Ranked products by total revenue
+  Used ORDER BY + LIMIT
+
 🔹 Daily Sales Analysis
-Aggregated daily revenue
-Compared each day’s sales against monthly average
-Classified days as:
-Above Average
-Below Average
+  Aggregated daily revenue
+  Compared each day’s sales against monthly average
+  Classified days as:
+  Above Average
+  Below Average
+
 🔹 Weekday vs Weekend Analysis
-Used CASE statements
-Identified performance differences between:
-Weekdays
-Weekends
+  Used CASE statements
+  Identified performance differences between:
+  Weekdays
+  Weekends
+
 🔹 Hourly Sales Trend
-Used HOUR(transaction_time)
-Identified peak sales hours
+  Used HOUR(transaction_time)
+  Identified peak sales hours
+
 🔹 Average Daily Sales (Subquery)
-Used derived tables
-Calculated monthly average revenue
+  Used derived tables
+  Calculated monthly average revenue
 
 # SQL Concepts Demonstrated
 
